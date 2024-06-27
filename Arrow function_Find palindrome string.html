@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullstack</title>
+</head>
+
+<body>
+    <h1>Jjavascriptcode</h1>
+
+    <script>
+       
+
+        var palindrome = ()=> {
+
+            function isPalindrome(s) {
+            var a = s;
+            s = s.split('').reverse().join('');
+            return s == a;
+        }
+
+
+            var arr = ["madam", "car", "swims", "maths", "malayalam"];
+            var answerarr = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (isPalindrome(arr[i])) {
+                    answerarr.push(arr[i]);
+                }
+
+            }
+            return answerarr;
+            
+        }
+        
+        var result=palindrome();
+        console.log(result);
+        
+
+
+    </script>
+</body>
+
+</html>
